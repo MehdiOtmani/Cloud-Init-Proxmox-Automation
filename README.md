@@ -1,7 +1,5 @@
 # 🚀 Proxmox Ubuntu Cloud‑Init Automation
 
-Automated creation of **Ubuntu Cloud‑Init VM templates** in **Proxmox VE**, enabling fast and consistent VM deployments across your infrastructure.
-
 ![Proxmox](https://img.shields.io/badge/Proxmox-Automation-orange?logo=proxmox)  
 ![Cloud‑Init](https://img.shields.io/badge/Cloud--Init-Ubuntu%2024.04-blue?logo=ubuntu)  
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -23,10 +21,8 @@ This repository is a **personal reference** for creating Ubuntu Cloud‑Init VM 
 ---
 
 ## 🧱 Prerequisites
-
 - Proxmox VE server with sufficient storage  
 - SSH access to your Proxmox host  
-
 ---
 
 ## 🧩 Setup Instructions
@@ -40,18 +36,18 @@ wget https://cloud-images.ubuntu.com/daily/server/releases/24.04/release/ubuntu-
 mv ubuntu-24.04-server-cloudimg-amd64.img ubuntu-24.04-cloud.img
 ```bash
 
-2️⃣ Create Cloud‑Init Template (VMID 1000)
+### 2️⃣ Create Cloud‑Init Template (VMID 1000)
 Clone this repository, make the script executable, and run it:
 ```bash
 chmod +x script.sh
 ./script.sh
 ```bash
 
-It will:
-- Create a UEFI + Q35 Cloud‑Init VM (VMID=1000)
-- Inject your SSH key
-- Install guest tools (qemu‑guest‑agent, htop)
-- Configure Cloud‑Init with DHCP
-- Convert the VM into a reusable template
+### What the script does:
+- Creates a UEFI + Q35 Cloud‑Init VM (VMID=1000)  
+- Injects your SSH key  
+- Installs guest tools (`qemu‑guest‑agent`, `htop`)  
+- Configures Cloud‑Init with DHCP  
+- Converts the VM into a reusable template  
 
 
