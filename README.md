@@ -39,8 +39,8 @@ mv ubuntu-24.04-server-cloudimg-amd64.img ubuntu-24.04-cloud.img
 ### 2️⃣ Create Cloud‑Init Template (VMID 1000)
 Clone this repository, make the script executable, and run it:
 ```bash
-chmod +x script.sh
-./script.sh
+chmod +x proxmox-cloudinit.sh
+./proxmox-cloudinit.sh
 ```
 
 ### What the script does:
