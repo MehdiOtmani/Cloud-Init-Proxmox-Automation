@@ -1,4 +1,4 @@
-# 🚀 Proxmox Ubuntu Cloud‑Init Automation
+#  Proxmox Ubuntu Cloud‑Init Automation
 
 ![Proxmox](https://img.shields.io/badge/Proxmox-Automation-orange?logo=proxmox)  
 ![Cloud‑Init](https://img.shields.io/badge/Cloud--Init-Ubuntu%2024.04-blue?logo=ubuntu)  
