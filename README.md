@@ -1,28 +1,39 @@
-🚀 Proxmox Ubuntu Cloud‑Init Automation
-Automated creation of Ubuntu Cloud‑Init VM templates in Proxmox VE, enabling fast and consistent VM deployments across your infrastructure.
+# 🚀 Proxmox Ubuntu Cloud‑Init Automation
 
-![Proxmox](https://img.shields.io/badge/Proxmox-Automation-orangehttps://img.shields.io/badge/Cloud--Init-Ubuntu%2024.https://img.shields.io/badge
+Automated creation of **Ubuntu Cloud‑Init VM templates** in **Proxmox VE**, enabling fast and consistent VM deployments across your infrastructure.
 
-This repository is a personal reference for creating Ubuntu Cloud‑Init VM templates in Proxmox, designed for both infrastructure automation workflows (Terraform, Ansible) and quick reproducible setups for labs or production environments.
+![Proxmox](https://img.shields.io/badge/Proxmox-Automation-orange?logo=proxmox)  
+![Cloud‑Init](https://img.shields.io/badge/Cloud--Init-Ubuntu%2024.04-blue?logo=ubuntu)  
+![License](https://img.shields.io/badge/License-MIT-green)
 
-✨ Features
-Cloud‑Init integration for automatic user creation & SSH key injection
+---
 
-Automatic package installation on first boot (qemu-guest-agent, htop, etc.)
+This repository is a **personal reference** for creating Ubuntu Cloud‑Init VM templates in Proxmox, designed for both **infrastructure automation workflows** (Terraform, Ansible) and quick reproducible setups for labs or production environments.
 
-Preconfigured networking (DHCP or static)
+---
 
-Reusable VM templates built from official Ubuntu 24.04 cloud images
+## ✨ Features
 
-Scripted automation for consistent, reproducible environments
+- Cloud‑Init integration for automatic user creation & SSH key injection  
+- Automatic package installation on first boot (`qemu-guest-agent`, `htop`, etc.)  
+- Preconfigured networking (DHCP or static)  
+- Reusable VM templates built from official Ubuntu 24.04 cloud images  
+- Scripted automation for consistent, reproducible environments
 
-🧱 Prerequisites
-Proxmox VE server with sufficient storage
+---
 
-SSH access to your Proxmox host
+## 🧱 Prerequisites
 
-🧩 Setup Instructions
-1️⃣ Download Ubuntu Cloud Image
+- Proxmox VE server with sufficient storage  
+- SSH access to your Proxmox host  
+
+---
+
+## 🧩 Setup Instructions
+
+### 1️⃣ Download Ubuntu Cloud Image
+
+
 ```bash
 cd /var/lib/vz/template/iso/
 wget https://cloud-images.ubuntu.com/daily/server/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.img
