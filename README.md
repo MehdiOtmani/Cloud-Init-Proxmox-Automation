@@ -34,14 +34,14 @@ This repository is a **personal reference** for creating Ubuntu Cloud‑Init VM 
 cd /var/lib/vz/template/iso/
 wget https://cloud-images.ubuntu.com/daily/server/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.img
 mv ubuntu-24.04-server-cloudimg-amd64.img ubuntu-24.04-cloud.img
-```bash
+```
 
 ### 2️⃣ Create Cloud‑Init Template (VMID 1000)
 Clone this repository, make the script executable, and run it:
 ```bash
 chmod +x script.sh
 ./script.sh
-```bash
+```
 
 ### What the script does:
 - Creates a UEFI + Q35 Cloud‑Init VM (VMID=1000)  
